@@ -4,7 +4,7 @@ const MongoClient = require("mongodb").MongoClient;
 const ObjectId = require("mongodb").ObjectID;
 require("dotenv").config()
 const DATABASE_NAME = "flutter_bus_booking";
-const CONNECTION_URL = require("./config/db.config");
+const CONNECTION_URL = process.env.CONNECTION_URL;
 var app = Express();
 const cors = require("cors");
 const db = require("./config/mongoose.config");
