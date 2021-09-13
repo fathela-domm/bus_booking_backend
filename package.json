@@ -1,0 +1,27 @@
+{
+  "name": "bus-booking-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -e \"const cmd = process.env.NODE_ENV === 'production' ? 'node app.js' : 'nodemon app.js'; require('child_process').execSync(cmd + ' app.js', { stdio: [0,1,2] });\""
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "express-mongo-sanitize": "^2.1.0",
+    "express-rate-limit": "^5.3.0",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongo-db": "^1.0.2",
+    "mongoose": "^6.0.5",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
